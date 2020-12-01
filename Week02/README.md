@@ -1,4 +1,6 @@
 学习笔记
+
+
 Q: 我们在数据库操作的时候，比如 dao 层中当遇到一个 sql.ErrNoRows 的时候，是否应该 Wrap 这个 error，抛给上层。为什么，应该怎么做请写出代码？
 
 A: 根据官网文档的推荐[错误处理](http://go-database-sql.org/errors.html)方法,应该将查询为空和其他错误分开处理.
